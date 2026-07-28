@@ -164,29 +164,44 @@ table.reportTable tbody tr:nth-child(4) td {
   box-shadow: inset 0 1px 0 #5f6368;
 }
 
-/* Remove all spacing above the header */
+/* Remove all space above the table header */
 .reportTable,
 table.reportTable {
-    margin: 0 !important;
-    border-spacing: 0 !important;
-    border-collapse: collapse !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: 0 !important;
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
 }
 
-table.reportTable thead {
-    margin: 0 !important;
-    padding: 0 !important;
+table.reportTable caption {
+  display: none !important;
+}
+
+table.reportTable thead,
+table.reportTable tbody {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 table.reportTable thead tr {
-    margin: 0 !important;
-    padding: 0 !important;
-    height: 28px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 28px !important;
 }
 
 table.reportTable thead th {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    height: 28px !important;
-    line-height: 28px !important;
-    vertical-align: middle !important;
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 28px !important;
+  line-height: 28px !important;
+}
+
+/* Hide any empty spacer row if the viz is generating one */
+table.reportTable tr:empty {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
 }
