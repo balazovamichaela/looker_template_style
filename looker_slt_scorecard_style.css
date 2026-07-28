@@ -47,15 +47,18 @@
 
 .reportTable {
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #cccccc;
+  border: 1px solid #e6e8eb;
   border-collapse: collapse;
   border-spacing: 0;
   color: #202124;
   background: #ffffff;
   font-size: 12px;
   line-height: 16px;
+  margin: 0 !important;
   margin-top: 0 !important;
+  padding: 0 !important;
   padding-top: 0 !important;
+  border-top: 0 !important;
 }
 
 table.reportTable th {
@@ -64,23 +67,23 @@ table.reportTable th {
 
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
 
   text-align: left;
   vertical-align: middle;
 
   padding: 0 8px;
-  height: 28px;
-  line-height: 28px;
+  height: 24px;
+  line-height: 24px;
 
-  border: 1px solid #c7c9cc;
+  border: 1px solid #d7d9dc;
   border-bottom: 2px solid #5f6368;
 }
 
 table.reportTable td {
-  vertical-align: super;
-  padding: 5px;
-  border: 1px solid #cccccc;
+  vertical-align: top;
+  padding: 5px 8px;
+  border: 1px solid #e6e8eb;
   border-collapse: collapse;
   font-size: 12px;
   font-weight: 400;
@@ -89,14 +92,20 @@ table.reportTable td {
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+table.reportTable td:first-child {
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
 .headerCell {
   background-color: #dfe0e3;
   color: #202124;
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0 8px;
-  height: 28px;
-  line-height: 28px;
+  height: 24px;
+  line-height: 24px;
   border-bottom: 2px solid #5f6368;
 }
 
@@ -109,7 +118,7 @@ table.reportTable td {
 }
 
 .rowCell {
-  vertical-align: super;
+  vertical-align: top;
   padding-left: 5px;
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -188,15 +197,15 @@ table.reportTable tbody {
 table.reportTable thead tr {
   margin: 0 !important;
   padding: 0 !important;
-  height: 28px !important;
+  height: 24px !important;
 }
 
 table.reportTable thead th {
   margin: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  height: 28px !important;
-  line-height: 28px !important;
+  height: 24px !important;
+  line-height: 24px !important;
 }
 
 /* Aggressively remove any empty spacer row above the real header */
