@@ -1,0 +1,152 @@
+/* ==========================================================================
+   LOOKER CONTEMPORARY TABLE STYLING
+   ========================================================================== */
+
+.reportTable,
+.reportTable table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  font-family:
+    Roboto,
+    "Noto Sans JP",
+    "Noto Sans CJK KR",
+    "Noto Sans Arabic UI",
+    "Noto Sans Devanagari UI",
+    "Noto Sans Hebrew",
+    "Noto Sans Thai UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 12px;
+  color: #202124;
+  background: #fff;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+.reportTable th {
+  background: #f8f9fa;
+  color: #202124;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+
+  padding: 6px 8px;
+
+  border-top: 1px solid #dadce0;
+  border-bottom: 1px solid #dadce0;
+  border-right: 1px solid #e8eaed;
+}
+
+.reportTable th:last-child {
+  border-right: none;
+}
+
+/* ==========================================================================
+   BODY CELLS
+   ========================================================================== */
+
+.reportTable td {
+  font-size: 12px;
+  font-weight: 400;
+  color: #202124;
+
+  padding: 5px 8px;
+
+  border-bottom: 1px solid #e8eaed;
+  border-right: 1px solid #e8eaed;
+
+  vertical-align: middle;
+}
+
+.reportTable td:last-child {
+  border-right: none;
+}
+
+/* ==========================================================================
+   ROW HOVER
+   ========================================================================== */
+
+.reportTable tbody tr:hover {
+  background: #f8f9fa;
+}
+
+/* ==========================================================================
+   OBJECTIVE LABELS
+   ========================================================================== */
+
+.reportTable .objective-label {
+  font-weight: 500;
+  color: #202124;
+}
+
+/* ==========================================================================
+   MAJOR / MINOR DIVIDER
+   ========================================================================== */
+
+/* Apply this class to the first Minor Objective row */
+.reportTable tr.minor-objective td {
+  border-top: 3px solid #9aa0a6;
+}
+
+/* ==========================================================================
+   KPI STATUS
+   ========================================================================== */
+
+.status-below {
+  color: #d93025;
+  font-weight: 500;
+}
+
+.status-ontrack {
+  color: #188038;
+  font-weight: 500;
+}
+
+.status-above {
+  color: #188038;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   NUMERIC COLUMNS
+   ========================================================================== */
+
+.reportTable .numeric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   COLUMN ALIGNMENT
+   ========================================================================== */
+
+.reportTable .center {
+  text-align: center;
+}
+
+.reportTable .left {
+  text-align: left;
+}
+
+.reportTable .right {
+  text-align: right;
+}
+
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+
+.reportTable a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.reportTable a:hover {
+  text-decoration: underline;
+}
