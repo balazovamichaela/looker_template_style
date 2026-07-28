@@ -189,7 +189,7 @@ table.reportTable caption {
 table.reportTable thead,
 table.reportTable tbody {
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 5px !important;
 }
 
 table.reportTable thead tr {
