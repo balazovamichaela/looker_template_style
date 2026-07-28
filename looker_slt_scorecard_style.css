@@ -21,13 +21,13 @@
   -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
   pointer-events: none;
-  font-family:   "Google Sans Text",   "Google Sans",   Roboto,   "Helvetica Neue",   Helvetica,   Arial,   sans-serif;
+  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   z-index: 2;
 }
 
 .tooltipTable {
-  font-family:   "Google Sans Text",   "Google Sans",   Roboto,   "Helvetica Neue",   Helvetica,   Arial,   sans-serif;
+  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 0px;
   border-collapse: collapse;
   table-layout: auto;
@@ -46,7 +46,7 @@
 }
 
 .reportTable {
-  font-family:   "Google Sans Text",   "Google Sans",   Roboto,   "Helvetica Neue",   Helvetica,   Arial,   sans-serif;
+  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #cccccc;
   border-collapse: collapse;
   border-spacing: 0;
@@ -60,17 +60,20 @@ table.reportTable th {
   background-color: #dfe0e3;
   color: #202124;
 
-  font-family:   "Google Sans Text",   "Google Sans",   Roboto,   "Helvetica Neue",   Helvetica,   Arial,   sans-serif;
+  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
 
   text-align: left;
   vertical-align: middle;
 
-  padding: 6px 8px;
+  /* remove extra space above header text */
+  padding: 0 8px;
+  height: 28px;
+  line-height: 28px;
 
   border: 1px solid #c7c9cc;
-  border-bottom: 1px solid #5f6368;
+  border-bottom: 2px solid #5f6368;
 }
 
 table.reportTable td {
@@ -82,16 +85,18 @@ table.reportTable td {
   font-weight: 400;
   color: #202124;
   background: #ffffff;
-  font-family:   "Google Sans Text",   "Google Sans",   Roboto,   "Helvetica Neue",   Helvetica,   Arial,   sans-serif;
+  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .headerCell {
   background-color: #dfe0e3;
   color: #202124;
-  font-family:   "Google Sans Text",   "Google Sans",   Roboto,   "Helvetica Neue",   Helvetica,   Arial,   sans-serif;
+  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  padding: 6px 8px;
-  border-bottom: 1px solid #5f6368;
+  padding: 0 8px;
+  height: 28px;
+  line-height: 28px;
+  border-bottom: 2px solid #5f6368;
 }
 
 .indexCell.transposed {
@@ -105,7 +110,7 @@ table.reportTable td {
 .rowCell {
   vertical-align: super;
   padding-left: 5px;
-  font-family:   "Google Sans Text",   "Google Sans",   Roboto,   "Helvetica Neue",   Helvetica,   Arial,   sans-serif;
+  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .nonNumeric {
@@ -146,7 +151,7 @@ table.reportTable td {
 }
 
 .rectElem.animated {
-  font-family:   "Google Sans Text",   "Google Sans",   Roboto,   "Helvetica Neue",   Helvetica,   Arial,   sans-serif;
+  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 4px;
 }
 
