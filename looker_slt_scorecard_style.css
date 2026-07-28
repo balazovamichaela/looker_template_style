@@ -54,9 +54,9 @@
   background: #ffffff;
   font-size: 12px;
   line-height: 16px;
-  margin: 0 !important;
-  padding: 5 !important;
-  border-top: 0 !important;
+  margin: 1 !important;
+  padding: 1 !important;
+  border-top: 1 !important;
 }
 
 table.reportTable th {
