@@ -179,3 +179,12 @@
   font-family: var(--font);
   margin: 4px;
 }
+
+/* Narrow the Objective column */
+.reportTable th:first-child,
+.reportTable td:first-child {
+  width: 140px !important;
+  min-width: 140px !important;
+  max-width: 140px !important;
+  white-space: nowrap !important;
+}
