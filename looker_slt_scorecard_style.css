@@ -76,21 +76,31 @@ table.reportTable th {
 
 table.reportTable td {
   vertical-align: middle;
-  padding: 8px 8px;
+
+  /* More breathing room */
+  padding: 12px 10px;
+
+  min-height: 44px;
+
   border: 1px solid #e6e8eb;
   border-collapse: collapse;
+
+  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #202124;
   background: #ffffff;
-  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Give the objective labels more breathing room from the divider */
 table.reportTable td:first-child {
-  font-weight: 600;
-  vertical-align: middle;
-  padding: 16px 10px;
+    font-weight: 500;
+    vertical-align: top;
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .headerCell {
@@ -237,4 +247,21 @@ table.reportTable tr:empty {
   height: 0 !important;
   padding: 0 !important;
   border: 0 !important;
+}
+
+/* KPI text should never be bold */
+.reportTable td,
+.reportTable td * {
+    font-weight: 400 !important;
+}
+
+/* Keep only headers bold */
+.reportTable th,
+.reportTable th * {
+    font-weight: 600 !important;
+}
+
+/* Objective labels slightly heavier */
+.reportTable td:first-child {
+    font-weight: 500 !important;
 }
