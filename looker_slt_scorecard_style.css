@@ -54,9 +54,9 @@
   background: #ffffff;
   font-size: 12px;
   line-height: 16px;
-  margin: 1 !important;
-  padding: 1 !important;
-  border-top: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: 0 !important;
 }
 
 table.reportTable th {
@@ -66,21 +66,22 @@ table.reportTable th {
   font-size: 12px;
   font-weight: 600;
   text-align: left;
-  vertical-align: middle;
-  padding: 6px 8px;
-  height: 28px;
-  line-height: 28px;
+  vertical-align: top;
+  padding: 4px 8px;
+  height: 26px;
+  line-height: 18px;
   border: 1px solid #d7d9dc;
   border-bottom: 2px solid #5f6368;
 }
 
 table.reportTable td {
-  vertical-align: middle;
+  vertical-align: top;
+  text-align: left;
 
-  /* More breathing room */
-  padding: 22px 20px;
+  /* moderate breathing room */
+  padding: 10px 10px;
 
-  min-height: 60px;
+  min-height: 44px;
 
   border: 1px solid #e6e8eb;
   border-collapse: collapse;
@@ -92,15 +93,14 @@ table.reportTable td {
   background: #ffffff;
 }
 
-/* Give the objective labels more breathing room from the divider */
+/* Give the objective labels a little more breathing room */
 table.reportTable td:first-child {
-    font-weight: 500;
-    vertical-align: top;
-
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-weight: 500;
+  vertical-align: top;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .headerCell {
@@ -108,10 +108,12 @@ table.reportTable td:first-child {
   color: #202124;
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  padding: 6px 8px;
-  height: 28px;
-  line-height: 28px;
+  padding: 4px 8px;
+  height: 26px;
+  line-height: 18px;
   border-bottom: 2px solid #5f6368;
+  text-align: left;
+  vertical-align: top;
 }
 
 .indexCell.transposed {
@@ -123,7 +125,8 @@ table.reportTable td:first-child {
 }
 
 .rowCell {
-  vertical-align: middle;
+  vertical-align: top;
+  text-align: left;
   padding-left: 5px;
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -133,7 +136,7 @@ table.reportTable td:first-child {
 }
 
 .numeric {
-  text-align: right;
+  text-align: left;
   font-variant-numeric: tabular-nums;
 }
 
@@ -182,12 +185,12 @@ table.reportTable tbody tr:nth-child(4) td {
 /* Remove all space above the table header */
 .reportTable,
 table.reportTable {
-  margin: 5 !important;
-  margin-top: 5 !important;
-  padding: 5 !important;
-  padding-top: 5 !important;
-  border-top: 5 !important;
-  border-spacing: 5 !important;
+  margin: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  padding-top: 0 !important;
+  border-top: 0 !important;
+  border-spacing: 0 !important;
   border-collapse: collapse !important;
 }
 
@@ -204,15 +207,15 @@ table.reportTable tbody {
 table.reportTable thead tr {
   margin: 0 !important;
   padding: 0 !important;
-  height: 28px !important;
+  height: 26px !important;
 }
 
 table.reportTable thead th {
   margin: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  height: 28px !important;
-  line-height: 28px !important;
+  height: 26px !important;
+  line-height: 18px !important;
 }
 
 /* Aggressively remove any empty spacer row above the real header */
@@ -252,16 +255,16 @@ table.reportTable tr:empty {
 /* KPI text should never be bold */
 .reportTable td,
 .reportTable td * {
-    font-weight: 400 !important;
+  font-weight: 400 !important;
 }
 
 /* Keep only headers bold */
 .reportTable th,
 .reportTable th * {
-    font-weight: 600 !important;
+  font-weight: 600 !important;
 }
 
 /* Objective labels slightly heavier */
 .reportTable td:first-child {
-    font-weight: 500 !important;
+  font-weight: 500 !important;
 }
