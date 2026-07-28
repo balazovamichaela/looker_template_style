@@ -68,8 +68,8 @@ table.reportTable td,
   background: #fff;
   font-size: 12px;
   line-height: 16px;
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 5px !important;
+  padding: 5px !important;
   border-top: 0 !important;
 }
 
