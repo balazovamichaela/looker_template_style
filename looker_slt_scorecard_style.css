@@ -176,7 +176,7 @@ table.reportTable tbody tr:nth-child(4) td {
 .reportTable,
 table.reportTable {
   margin-top: 0 !important;
-  padding-top: 5px !important;
+  padding-top: 8px !important;
   border-top: 0 !important;
   border-spacing: 0 !important;
   border-collapse: collapse !important;
