@@ -75,7 +75,7 @@ table.reportTable th {
 }
 
 table.reportTable td {
-  vertical-align: top;
+  vertical-align: middle;
   padding: 8px 8px;
   border: 1px solid #e6e8eb;
   border-collapse: collapse;
@@ -86,10 +86,11 @@ table.reportTable td {
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Give the objective labels more breathing room from the divider */
 table.reportTable td:first-child {
-  font-weight: 500;
-  padding-top: 14px;
-  padding-bottom: 10px;
+  font-weight: 600;
+  vertical-align: middle;
+  padding: 16px 10px;
 }
 
 .headerCell {
@@ -112,7 +113,7 @@ table.reportTable td:first-child {
 }
 
 .rowCell {
-  vertical-align: top;
+  vertical-align: middle;
   padding-left: 5px;
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
