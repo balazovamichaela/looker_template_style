@@ -54,6 +54,8 @@
   background: #ffffff;
   font-size: 12px;
   line-height: 16px;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 table.reportTable th {
@@ -67,7 +69,6 @@ table.reportTable th {
   text-align: left;
   vertical-align: middle;
 
-  /* remove extra space above header text */
   padding: 0 8px;
   height: 28px;
   line-height: 28px;
@@ -196,6 +197,32 @@ table.reportTable thead th {
   padding-bottom: 0 !important;
   height: 28px !important;
   line-height: 28px !important;
+}
+
+/* Aggressively remove any empty spacer row above the real header */
+table.reportTable thead tr:empty {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+
+table.reportTable thead tr:first-child {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+}
+
+table.reportTable thead tr:first-child th {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  border: 0 !important;
 }
 
 /* Hide any empty spacer row if the viz is generating one */
