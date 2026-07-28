@@ -8,27 +8,42 @@
   src: url('./fonts/noto-sans-sc-v11-latin_chinese-simplified-regular.woff2') format('woff2');
 }
 
+:root {
+  --font: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --text: #202124;
+  --header-bg: #dfe0e3;
+  --header-border: #c7c9cc;
+  --cell-border: #cccccc;
+  --divider: #5f6368;
+  --light-border: #e6e8eb;
+}
+
 #tooltip {
   position: absolute;
   width: auto;
   height: auto;
   padding: 5px;
-  background-color: white;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
+  background: #fff;
   border-radius: 4px;
-  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
   pointer-events: none;
-  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font);
   font-size: 12px;
   z-index: 2;
 }
 
+.tooltipTable,
+.reportTable,
+table.reportTable th,
+table.reportTable td,
+.headerCell,
+.rowCell,
+.rectElem.animated {
+  font-family: var(--font);
+}
+
 .tooltipTable {
-  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 0px;
+  border: 0;
   border-collapse: collapse;
   table-layout: auto;
 }
@@ -46,58 +61,52 @@
 }
 
 .reportTable {
-  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--light-border);
   border-collapse: collapse;
   border-spacing: 0;
-  color: #202124;
-  background: #ffffff;
+  color: var(--text);
+  background: #fff;
   font-size: 12px;
   line-height: 16px;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: 0 !important;
 }
 
-table.reportTable th {
-  background-color: #dfe0e3;
-  color: #202124;
-
-  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+table.reportTable th,
+.headerCell {
+  background-color: var(--header-bg);
+  color: var(--text);
   font-size: 12px;
   font-weight: 700;
-
   text-align: left;
   vertical-align: middle;
-
   padding: 0 8px;
   height: 28px;
   line-height: 28px;
-
-  border: 1px solid #c7c9cc;
-  border-bottom: 2px solid #5f6368;
+  border: 1px solid var(--header-border);
+  border-bottom: 2px solid var(--divider);
 }
 
 table.reportTable td {
   vertical-align: super;
+  text-align: left;
   padding: 5px;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--cell-border);
   border-collapse: collapse;
   font-size: 12px;
   font-weight: 400;
-  color: #202124;
-  background: #ffffff;
-  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
 }
 
-.headerCell {
-  background-color: #dfe0e3;
-  color: #202124;
-  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  padding: 0 8px;
-  height: 28px;
-  line-height: 28px;
-  border-bottom: 2px solid #5f6368;
+table.reportTable td:first-child {
+  font-weight: 500 !important;
+  vertical-align: top;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .indexCell.transposed {
@@ -105,13 +114,12 @@ table.reportTable td {
 }
 
 .indexCell.transposed.merged {
-  background-color: #ffffff !important;
+  background-color: #fff !important;
 }
 
 .rowCell {
   vertical-align: super;
   padding-left: 5px;
-  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .nonNumeric {
@@ -119,7 +127,7 @@ table.reportTable td {
 }
 
 .numeric {
-  text-align: right;
+  text-align: left;
   font-variant-numeric: tabular-nums;
 }
 
@@ -142,17 +150,16 @@ table.reportTable td {
 }
 
 .total {
-  border-top: 2px solid #000000 !important;
+  border-top: 2px solid #000 !important;
   font-weight: bold !important;
 }
 
 .total.transposed {
-  border-top: 0px !important;
+  border-top: 0 !important;
   background: #d3d3d3;
 }
 
 .rectElem.animated {
-  font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 4px;
 }
 
@@ -161,8 +168,8 @@ table.reportTable td {
    Fallback: this targets the 4th row in the table body. */
 table.reportTable tr.major-minor-divider td,
 table.reportTable tbody tr:nth-child(4) td {
-  border-top: 3px solid #5f6368 !important;
-  box-shadow: inset 0 1px 0 #5f6368;
+  border-top: 3px solid var(--divider) !important;
+  box-shadow: inset 0 1px 0 var(--divider);
 }
 
 /* Remove all space above the table header */
@@ -200,7 +207,8 @@ table.reportTable thead th {
 }
 
 /* Aggressively remove any empty spacer row above the real header */
-table.reportTable thead tr:empty {
+table.reportTable thead tr:empty,
+table.reportTable tr:empty {
   display: none !important;
   height: 0 !important;
   padding: 0 !important;
@@ -208,14 +216,7 @@ table.reportTable thead tr:empty {
   border: 0 !important;
 }
 
-table.reportTable thead tr:first-child {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 0 !important;
-  line-height: 0 !important;
-  font-size: 0 !important;
-}
-
+table.reportTable thead tr:first-child,
 table.reportTable thead tr:first-child th {
   margin: 0 !important;
   padding: 0 !important;
@@ -225,10 +226,14 @@ table.reportTable thead tr:first-child th {
   border: 0 !important;
 }
 
-/* Hide any empty spacer row if the viz is generating one */
-table.reportTable tr:empty {
-  display: none !important;
-  height: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
+/* KPI text should never be bold */
+.reportTable td,
+.reportTable td * {
+  font-weight: 400 !important;
+}
+
+/* Keep only headers bold */
+.reportTable th,
+.reportTable th * {
+  font-weight: 600 !important;
 }
