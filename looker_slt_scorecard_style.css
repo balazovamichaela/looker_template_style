@@ -182,12 +182,12 @@ table.reportTable tbody tr:nth-child(4) td {
 /* Remove all space above the table header */
 .reportTable,
 table.reportTable {
-  margin: 0 !important;
-  margin-top: 0 !important;
-  padding: 0 !important;
-  padding-top: 0 !important;
-  border-top: 0 !important;
-  border-spacing: 0 !important;
+  margin: 5 !important;
+  margin-top: 5 !important;
+  padding: 5 !important;
+  padding-top: 5 !important;
+  border-top: 5 !important;
+  border-spacing: 5 !important;
   border-collapse: collapse !important;
 }
 
