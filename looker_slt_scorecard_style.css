@@ -28,7 +28,7 @@
 
 .tooltipTable {
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 0px;
+  border: 0;
   border-collapse: collapse;
   table-layout: auto;
 }
@@ -67,7 +67,7 @@ table.reportTable th {
   font-weight: 600;
   text-align: left;
   vertical-align: top;
-  padding: 4px 8px;
+  padding: 5px 8px;
   height: 26px;
   line-height: 18px;
   border: 1px solid #d7d9dc;
@@ -78,10 +78,9 @@ table.reportTable td {
   vertical-align: top;
   text-align: left;
 
-  /* moderate breathing room */
-  padding: 10px 10px;
-
-  min-height: 44px;
+  /* more breathing room */
+  padding: 12px 10px;
+  min-height: 48px;
 
   border: 1px solid #e6e8eb;
   border-collapse: collapse;
@@ -93,9 +92,9 @@ table.reportTable td {
   background: #ffffff;
 }
 
-/* Give the objective labels a little more breathing room */
+/* Objective labels: a touch more space without making the row feel huge */
 table.reportTable td:first-child {
-  font-weight: 500;
+  font-weight: 500 !important;
   vertical-align: top;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -108,7 +107,7 @@ table.reportTable td:first-child {
   color: #202124;
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  padding: 4px 8px;
+  padding: 5px 8px;
   height: 26px;
   line-height: 18px;
   border-bottom: 2px solid #5f6368;
@@ -164,7 +163,7 @@ table.reportTable td:first-child {
 }
 
 .total.transposed {
-  border-top: 0px !important;
+  border-top: 0 !important;
   background: #d3d3d3;
 }
 
