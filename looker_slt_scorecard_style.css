@@ -55,34 +55,28 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0 !important;
-  margin-top: 0 !important;
   padding: 0 !important;
-  padding-top: 0 !important;
   border-top: 0 !important;
 }
 
 table.reportTable th {
   background-color: #dfe0e3;
   color: #202124;
-
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 600;
-
   text-align: left;
   vertical-align: middle;
-
-  padding: 0 8px;
-  height: 24px;
-  line-height: 24px;
-
+  padding: 6px 8px;
+  height: 28px;
+  line-height: 28px;
   border: 1px solid #d7d9dc;
   border-bottom: 2px solid #5f6368;
 }
 
 table.reportTable td {
   vertical-align: top;
-  padding: 5px 8px;
+  padding: 8px 8px;
   border: 1px solid #e6e8eb;
   border-collapse: collapse;
   font-size: 12px;
@@ -94,8 +88,8 @@ table.reportTable td {
 
 table.reportTable td:first-child {
   font-weight: 500;
-  padding-top: 10px;
-  padding-bottom: 6px;
+  padding-top: 14px;
+  padding-bottom: 10px;
 }
 
 .headerCell {
@@ -103,9 +97,9 @@ table.reportTable td:first-child {
   color: #202124;
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  padding: 0 8px;
-  height: 24px;
-  line-height: 24px;
+  padding: 6px 8px;
+  height: 28px;
+  line-height: 28px;
   border-bottom: 2px solid #5f6368;
 }
 
@@ -177,7 +171,9 @@ table.reportTable tbody tr:nth-child(4) td {
 /* Remove all space above the table header */
 .reportTable,
 table.reportTable {
+  margin: 0 !important;
   margin-top: 0 !important;
+  padding: 0 !important;
   padding-top: 0 !important;
   border-top: 0 !important;
   border-spacing: 0 !important;
@@ -197,15 +193,15 @@ table.reportTable tbody {
 table.reportTable thead tr {
   margin: 0 !important;
   padding: 0 !important;
-  height: 24px !important;
+  height: 28px !important;
 }
 
 table.reportTable thead th {
   margin: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  height: 24px !important;
-  line-height: 24px !important;
+  height: 28px !important;
+  line-height: 28px !important;
 }
 
 /* Aggressively remove any empty spacer row above the real header */
