@@ -67,7 +67,8 @@ table.reportTable th {
   font-weight: 600;
   text-align: left;
   vertical-align: top;
-  padding: 5px 8px;
+  /* padding: 5px 8px; */
+  padding: 14px 12px;
   height: 26px;
   line-height: 18px;
   border: 1px solid #d7d9dc;
@@ -79,7 +80,8 @@ table.reportTable td {
   text-align: left;
 
   /* more breathing room */
-  padding: 12px 10px;
+  /* padding: 12px 10px; */
+  padding: 14px 12px;
   min-height: 48px;
 
   border: 1px solid #e6e8eb;
@@ -107,7 +109,8 @@ table.reportTable td:first-child {
   color: #202124;
   font-family: "Google Sans Text", "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  padding: 5px 8px;
+  /* padding: 5px 8px; */
+  padding: 14px 12px;
   height: 26px;
   line-height: 18px;
   border-bottom: 2px solid #5f6368;
