@@ -57,15 +57,20 @@
 }
 
 table.reportTable th {
-  border: 1px solid #cccccc;
-  border-bottom: 1px solid #5f6368 !important;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: 500;
+  background-color: #dfe0e3;
   color: #202124;
-  background: #f8f9fa;
-  text-align: left;
+
   font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+
+  text-align: left;
+  vertical-align: middle;
+
+  padding: 6px 8px;
+
+  border: 1px solid #c7c9cc;
+  border-bottom: 1px solid #5f6368;
 }
 
 table.reportTable td {
@@ -81,10 +86,12 @@ table.reportTable td {
 }
 
 .headerCell {
-  border-bottom: 1px solid #5f6368 !important;
-  font-weight: 500;
-  padding: 5px;
+  background-color: #dfe0e3;
+  color: #202124;
   font-family: inherit;
+  font-weight: 700;
+  padding: 6px 8px;
+  border-bottom: 1px solid #5f6368;
 }
 
 .indexCell.transposed {
